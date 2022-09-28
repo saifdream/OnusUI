@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>User Information</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" href="css/web.css" />
+	
+</head>
+<body>
+	<section>
+		<nav id="mainNav" class="navbar custom-navbar navbar-default navbar-fixed-top">
+			<div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+			        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+			        	<span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			        </button>
+			        <a class="navbar-brand page-scroll" href="dashboard.html">Onus IT Solution</a>
+			    </div>
+			
+			    <!-- Collect the nav links, forms, and other content for toggling -->
+			    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			        <ul class="nav navbar-nav">
+			           <li>
+			              <a class="page-scroll" href="dashboard.html">
+				             <span class="glyphicon glyphicon-home">
+				                <strong>Home</strong>
+				             </span>
+			              </a>
+			           </li>
+			           <li>
+			              <a class="page-scroll" href="create.html">
+			                 <span class="glyphicon glyphicon-plus"></span>&nbsp;Create</a>
+			           </li>
+			           <li>
+			              <a class="page-scroll" href="edit.html">
+			                 <span class="glyphicon glyphicon-edit"></span>&nbsp;Update</a>
+			           </li>
+			           <li class="active">
+			              <a class="page-scroll" href="userdetails.html">
+			                 <span class="glyphicon glyphicon-blackboard"></span>&nbsp;User Details</a>
+			           </li>
+			           <li>
+			              <a class="page-scroll" href="list.html">
+			                 <span class="glyphicon glyphicon-list-alt"></span>&nbsp;List</a>
+			           </li>
+			           <li>
+			              <a class="page-scroll" href="onetomany.html">
+			                 <span class="glyphicon glyphicon-briefcase"></span>&nbsp;One To Many</a>
+			           </li>
+			           <!-- Sub-sub Menu Navigation -->
+					   <li>
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown"> 
+				          	<span class="glyphicon glyphicon-tasks"></span>&nbsp; User Management <b class="caret"></b>
+				          </a>
+				             <ul class="dropdown-menu">
+				                 <li><a href="#">Create User Role</a></li>
+				                 <li><a href="#">Update User Role</a></li>
+				                 <li><a href="#">Remove User Role</a></li>
+				                 <li class="divider"></li>
+				                 <li><a href="#">User Role List</a></li>
+				                 <li class="divider"></li>
+				                 <li class="dropdown-submenu">
+				                     <a href="#" class="dropdown-toggle" data-toggle="dropdown">Role Category</a>
+				                        <ul class="dropdown-menu">
+				                            <li><a href="#">Admin</a></li>
+				                            <li><a href="#">Sr. Executive</a></li>
+				                            <li><a href="#">Executive</a></li>
+				                            <li class="divider"></li>
+				                            <li><a href="#">Separated link</a></li>
+				                            <li class="divider"></li>
+				                            <li class="dropdown-submenu">
+				                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown</a>
+				                                   <ul class="dropdown-menu">
+				                                    	<li><a href="#">Action</a></li>
+				                                        <li><a href="#">Another action</a></li>
+				                                        <li><a href="#">Something else here</a></li>
+				                                        <li class="divider"></li>
+				                                        <li><a href="#">Separated link</a></li>
+				                                        <li class="divider"></li>
+				                                        <li><a href="#">One more separated link</a></li>
+				                                    </ul>
+				                            </li>
+				                       </ul>
+				                </li>
+				            </ul>
+				       </li>
+				       <li>
+			              <a class="page-scroll" href="confirmation.html">
+			                 <span class="glyphicon glyphicon-bell"></span>&nbsp;Notification</a>
+			           </li>
+			      </ul>
+			      <ul class="nav navbar-nav navbar-right">
+				      <li class="dropdown">
+				          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-user"></span> &nbsp;John Smith <b class="caret"></b></a>
+				          	<ul class="dropdown-menu">
+				                <li>
+				                    <a href="#"><i class="glyphicon glyphicon-user"></i> Profile</a>
+				                </li>
+				                <li>
+				                    <a href="#"><i class="glyphicon glyphicon-envelope"></i> Inbox</a>
+				                </li>
+				                <li>
+				                    <a href="#"><i class="glyphicon glyphicon-cog"></i> Settings</a>
+				                </li>
+				                <li class="divider"></li>
+				                <li>
+				                   	<a href="#"><i class="glyphicon glyphicon-log-out"></i> Log Out</a>
+				                </li>
+				           </ul>
+				     </li>
+				</ul>
+			  </div>
+			  <!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container-fluid -->
+		</nav>
+	</section>
+	<section>
+		<div class="container">
+		
+			<div class="row form-horizontal"><br>
+			
+				<div class="col-md-6 col-md-offset-3 boundary">
+				
+				<!-- FORM : YOU CAN DISABLE, HTML5 VALIDATION BY USING "novalidate" ATTRIBUTE-->
+				<form class="form-horizontal" role="form" id="userForm" action="#" method="post">
+				
+				<!-- PAGE HEADER -->
+				<div id="header" class="page-header">
+				    <h4><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;User Information</h4>
+				</div>
+				<br>
+				
+				<div class="line col-md-6">
+					<!-- FIRST NAME -->
+				    <div class="form-group form-group-sm">
+				         <div class="col-sm-12">
+					         <label class="" for="firstName">First Name : &nbsp;</label>
+					         Md Saiful
+				         </div>
+				    </div>
+				    
+				    <!-- LAST NAME -->
+				    <div class="form-group form-group-sm">
+					     <div class="col-sm-12">
+						     <label class="" for="lastName">Last Name : &nbsp;</label>
+						     Islam
+					     </div>
+					</div>
+					
+					<!-- GENDER -->
+					<div class="form-group form-group-sm">
+				       <div class="col-sm-12">
+					        <label class="" for="gender">Gender :</label>
+							Male
+				       </div>
+			        </div>
+				    
+				     <!-- CONTACT NO -->
+				    <div class="form-group form-group-sm">
+			          <div class="col-sm-12">
+				          <label class="" for="contactno">Contact No :</label>
+				          01612205942
+			          </div>
+			        </div>
+			        
+			        <!-- Address -->
+			        <div class="form-group form-group-md">
+			          <div class="col-sm-12">
+				         <label class="" for="Address">Address :</label>
+	                     <address>
+				            House # 669/C, Mizmizi, Kandhapara,
+	                        Narayangonj Sadar, Narayangonj
+	                     </address>
+			          </div>
+			        </div>
+			        
+				</div>
+				
+				<div class="divstyle col-md-6">
+					<!-- E-MAIL -->
+					<div class="form-group form-group-sm">
+			          	<div class="col-sm-12">
+				          	<label class="" for="email">Email :</label>
+				            saif89.2012@gmail.com
+			          	</div>
+			        </div>
+					
+					<!-- USERNAME -->
+					<div class="form-group form-group-sm">
+			           <div class="col-sm-12">
+			          	   <label class="" for="username">Username :</label>
+				       	   saif89
+			           </div>
+			        </div>
+			        
+			        <!-- USER TYPE -->
+			        <div class="form-group form-group-sm">
+					  <div class="col-sm-12">
+					  	  <label class="" for="userType">User Type :</label>
+						  Executive
+					  </div>
+					</div>
+					
+					<!-- DATE OF Joining -->
+					<div class="form-group form-group-sm">
+			          <div class="col-sm-12">
+			             <label for="doj" class="">Date Of Joining :</label>
+	                     20-December-2014
+		               </div>
+			        </div>
+			        
+	                <!-- DATE OF BIRTH -->
+			        <div class="from-inline form-group form-group-sm">
+			          <div class="col-sm-12">
+			          		<label for="dob" class="">Date Of Birth :</label>
+			                01-January-1989
+			            </div>
+			        </div>
+	
+				</div>
+				
+				</form>
+				
+				</div>
+			</div>
+	        <br>
+		</div>
+	</section>
+	<footer class="footer navbar-fixed-bottom" id="footer" style="">
+	      <div id="footer">
+			  <div class="container">
+			    <p class="text-muted" style="padding: 15px; text-align: center">All right belogns to &copy; Onus IT Solution 2015</p>
+			  </div>
+		  </div>
+	</footer>
+	
+	<script type="text/javascript" src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/classie.js"></script>
+	<script src="js/cbpAnimatedHeader.js"></script>
+	<script src="js/web.js"></script>
+</body>
+</html>
